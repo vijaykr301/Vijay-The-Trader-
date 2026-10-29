@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<title>VIJAY_THE TRADER | XAU/USD Live</title>
+<style>
+:root{--bg:#050a13;--panel:#0b1626;--panel2:#0e1d30;--line:#1d3550;--blue:#36b7ff;--gold:#f4c76b;--muted:#8fa6bf;--white:#eef6ff;--green:#4ce0a0;--red:#ff6b7a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#112743 0%,#050a13 55%);color:var(--white);font-family:Inter,Arial,sans-serif}
+.wrap{max-width:520px;margin:auto;padding:14px 12px 26px}.top{display:flex;align-items:center;gap:10px;padding:10px 4px 16px}.logo{width:44px;height:44px;border:1px solid var(--gold);border-radius:13px;display:grid;place-items:center;color:var(--gold);font-weight:900;letter-spacing:-1px;box-shadow:0 0 22px #f4c76b20}.brand{flex:1}.brand h1{font-size:16px;letter-spacing:1.2px;margin:0 0 4px}.brand p{margin:0;color:var(--muted);font-size:11px;letter-spacing:.8px}.live{font-size:10px;border:1px solid #2b6c59;color:var(--green);padding:6px 8px;border-radius:99px;white-space:nowrap}.live:before{content:"";display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:5px;box-shadow:0 0 9px var(--green)}
+.hero,.card{background:linear-gradient(145deg,#0e2035,#08111f);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:12px;box-shadow:0 12px 32px #0003}.eyebrow{font-size:10px;letter-spacing:1.7px;color:var(--muted);text-transform:uppercase}.price{font-size:clamp(32px,9vw,46px);font-weight:800;letter-spacing:-1.7px;margin:9px 0 5px;overflow-wrap:anywhere}.currency{font-size:13px;color:var(--gold);font-weight:700;letter-spacing:1px}.subrow{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px;color:var(--muted);flex-wrap:wrap}.pill{padding:6px 9px;border-radius:8px;background:#12283d;border:1px solid #25435e;color:#d9e8f8}.api-state{margin-top:12px;font-size:10px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}.section-title{display:flex;justify-content:space-between;align-items:center;margin:4px 2px 10px}.section-title h2{font-size:12px;letter-spacing:1.5px;margin:0;text-transform:uppercase}.section-title span{font-size:10px;color:var(--gold)}.chartbox{height:430px;overflow:hidden;border-radius:13px;border:1px solid var(--line);background:#08111e}.chartbox iframe{width:100%;height:100%;border:0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:#0b1929;border:1px solid var(--line);border-radius:14px;padding:13px}.stat .label{font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}.stat .value{font-size:17px;font-weight:750;margin-top:8px;color:var(--white)}.stat .small{font-size:10px;color:var(--muted);margin-top:5px}.links{display:flex;gap:8px;margin-top:12px}.linkbtn{flex:1;text-align:center;padding:11px 8px;border-radius:10px;text-decoration:none;font-size:11px;font-weight:700;background:linear-gradient(100deg,#f4c76b,#d9a73f);color:#101521}.linkbtn.secondary{background:#102238;border:1px solid #29425e;color:#dbeaff}.note{font-size:10px;line-height:1.55;color:#8196ac;margin:12px 4px 0}.footer{text-align:center;font-size:10px;letter-spacing:1.5px;color:#66809a;padding:15px 0 4px}.err{color:var(--red)}@media(min-width:420px){.wrap{padding:18px 16px 30px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="logo">VT</div>
+    <div class="brand"><h1>VIJAY_THE TRADER</h1><p>@vijay_thetrader · GOLD MARKET DESK</p></div>
+    <div class="live">LIVE DATA</div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">Gold Spot · XAU / USD</div>
+    <div class="price" id="price">Loading…</div>
+    <div class="subrow"><span class="currency">USD / TROY OUNCE</span><span class="pill" id="change">Spot market quote</span></div>
+    <div class="api-state"><span id="state">Connecting to price source…</span><span id="updated">Updated: —</span></div>
+  </section>
+
+  <div class="section-title"><h2>Live Trading Chart</h2><span>OANDA · XAUUSD · 15m</span></div>
+  <section class="chartbox">
+    <iframe title="TradingView XAUUSD chart" loading="lazy" src="https://s.tradingview.com/widgetembed/?frameElementId=tv_xauusd&symbol=OANDA%3AXAUUSD&interval=15&hidesidetoolbar=1&symboledit=0&saveimage=0&toolbarbg=%230b1626&studies=%5B%5D&theme=dark&style=1&timezone=Asia%2FKolkata&withdateranges=1&hideideas=1&studies_overrides=%7B%7D&overrides=%7B%22paneProperties.background%22%3A%22%2307111f%22%2C%22paneProperties.backgroundType%22%3A%22solid%22%7D&enabled_features=%5B%5D&disabled_features=%5B%22header_symbol_search%22%2C%22header_compare%22%5D&locale=en"></iframe>
+  </section>
+
+  <div class="section-title"><h2>Market Snapshot</h2><span>Source status</span></div>
+  <section class="stats">
+    <div class="stat"><div class="label">Instrument</div><div class="value">XAU/USD</div><div class="small">Spot gold / US dollar</div></div>
+    <div class="stat"><div class="label">Refresh</div><div class="value">30 sec</div><div class="small">Price API polling interval</div></div>
+    <div class="stat"><div class="label">Data state</div><div class="value" id="dataState">Checking</div><div class="small">Based on API response</div></div>
+    <div class="stat"><div class="label">Last checked</div><div class="value" id="checkedAt">—</div><div class="small">Your device local time</div></div>
+  </section>
+  <div class="links">
+    <a class="linkbtn" href="https://www.tradingview.com/chart/?symbol=OANDA%3AXAUUSD" target="_blank" rel="noopener">OPEN FULL CHART ↗</a>
+    <a class="linkbtn secondary" href="https://gold-api.com/docs" target="_blank" rel="noopener">PRICE SOURCE ↗</a>
+  </div>
+  <p class="note">Data note: the large quote is third-party XAU spot data and refreshes about every 30 seconds. The embedded chart uses TradingView’s OANDA:XAUUSD feed, which may differ from your broker’s executable price or update entitlement. This is a market display, not a trade execution terminal. Verify prices and data freshness before trading or broadcasting.</p>
+  <div class="footer">DISCIPLINE · PROCESS · RISK MANAGEMENT</div>
+</div>
+<script>
+const priceEl=document.getElementById('price'), stateEl=document.getElementById('state'), updatedEl=document.getElementById('updated'), dataStateEl=document.getElementById('dataState'), checkedAtEl=document.getElementById('checkedAt'), changeEl=document.getElementById('change');
+function localTime(d){return d.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true});}
+async function loadGold(){
+  checkedAtEl.textContent=localTime(new Date());
+  try{
+    const r=await fetch('https://api.gold-api.com/price/XAU/USD',{cache:'no-store'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const d=await r.json();
+    const p=Number(d.price ?? d.value ?? d.ask);
+    if(!Number.isFinite(p)) throw new Error('Price field unavailable');
+    priceEl.textContent='$'+p.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+    const stamp=d.updatedAt || d.updated_at || d.timestamp || d.date;
+    let date=null;
+    if(typeof stamp==='number') date=new Date(stamp<1e12?stamp*1000:stamp);
+    else if(stamp) date=new Date(stamp);
+    updatedEl.textContent='Updated: '+(date&&!isNaN(date)?localTime(date)+' UTC/local source':'time unavailable');
+    stateEl.textContent='Connected · Gold API';
+    dataStateEl.textContent='Connected';
+    dataStateEl.style.color='var(--green)';
+    changeEl.textContent='Spot quote · USD/oz';
+    changeEl.style.color='var(--gold)';
+  }catch(e){
+    stateEl.textContent='Price source unavailable — retrying';
+    stateEl.className='err';
+    dataStateEl.textContent='Unavailable';
+    dataStateEl.style.color='var(--red)';
+    updatedEl.textContent='Updated: —';
+    if(priceEl.textContent==='Loading…') priceEl.textContent='—';
+  }
+}
+loadGold();setInterval(loadGold,30000);
+</script>
+</body>
+</html>
